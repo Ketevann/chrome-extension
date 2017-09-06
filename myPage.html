@@ -11,24 +11,38 @@
       body {
         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
         font-size: 100%;
-
       }
-      .hello{
-        display: flex;
-        flex-flow:column;
-        justify-content: 'center';
-        align-content: 'center'
+
+      #newspage{
+            display: flex;
+    align-items: center;
+    flex-flow: column
       }
       .news {
         /* avoid an excessively wide status text */
-        display: 'inline-block';
-        background-color: 'beige';
+        display: block;
+        background-color: 'black';
         padding: 10px;
-        font-size: 10px;
+        font-family:  Helvetica, sans-serif;
+        text-decoration: none;
+        color: black;
 
       }
       .newsImage{
+        min-width: 600px;
+        margin-left: 20px;
         width: 300px;
+        padding:10px
+      }
+
+      .description {
+        color: gray;
+        width: 600px;
+        padding: 10px;
+
+      }
+      .description, .news{
+        margin-left: 20px;
       }
     </style>
 
@@ -45,7 +59,7 @@
     <img id="image-result" hidden>
 
 
-    <div id="hello">Hello!!!!!!!!!!!!!!</div>
+    <div id="newspage">News!!</div>
 <!--<form name="myForm" action="#" method="post">
       <input name="source" placeHolder='news Org' />
       <input type='submit' name="submit" />

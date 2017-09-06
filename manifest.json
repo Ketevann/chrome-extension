@@ -33,6 +33,6 @@
           "activeTab"
 
   ],
-"background": { "scripts": ["background.js"] }
+"background": { "scripts": ["apikey.js", "background.js"] }
 
 }
