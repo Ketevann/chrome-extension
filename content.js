@@ -4,17 +4,17 @@
 
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   console.log('message', message)
-  if (message.text == "get"){
-    console.log(message.data)
+  if (message.text == "gets"){
+    console.log(message)
     sendResponse({ type: "test2", data: "something" });
-  }
 
 
-chrome.runtime.sendMessage({text:"getStuff", source:message.data},function(reponse){
+
+chrome.runtime.sendMessage({text:"getStuff", source:message.source},function(reponse){
   //This is where the stuff you want from the background page will be
   if(reponse.type == "test")
     console.log("Test received");
-    console.log(reponse.data)
+    console.log(reponse.data, 'data!!')
    // console.log(reponse.data.articles)
    remove()
    function remove(){
@@ -65,6 +65,7 @@ mydiv.appendChild(imageTag);
 
 
  });
+  }
 });
 
 // myForm = document.getElementsByName('myForm')[0];
