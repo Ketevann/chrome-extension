@@ -28,7 +28,7 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
 
         mydiv.appendChild(aTag);
         mydiv.appendChild(myDescription);
-        mydiv.appendChild(imageTag); x
+        mydiv.appendChild(imageTag); 
       })
     });
   }
